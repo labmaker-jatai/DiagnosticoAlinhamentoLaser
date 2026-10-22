@@ -1,4 +1,4 @@
-# Diagnóstico do Corte a Laser – Delta CNC
+# Diagnóstico do Corte a Laser
 
 ## Descrição do projeto
 
