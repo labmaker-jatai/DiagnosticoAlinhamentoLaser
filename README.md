@@ -1,27 +1,25 @@
-# Diagnóstico do Alinhamento do Laser Delta CNC
+# Diagnóstico do Corte a Laser – Delta CNC
 
-Este projeto foi desenvolvido para **avaliar o desempenho e o alinhamento do sistema de corte a laser da máquina Delta CNC**, realizando testes com diferentes combinações de intensidade e velocidade de corte.
+## Descrição do projeto
 
-## Objetivo
+Este projeto tem como objetivo avaliar a capacidade de corte de máquinas a laser Delta CNC, identificando as combinações de **potência (intensidade do laser) e velocidade de corte** mais adequadas para o processamento de materiais.
 
-O teste permite identificar quais configurações de **potência (intensidade)** e **velocidade** são capazes de produzir cortes satisfatórios no material utilizado, facilitando o diagnóstico e a calibração da máquina.
+O arquivo de teste contém **100 configurações diferentes**, combinando intensidades de corte entre 55% e 100% e velocidades entre 2 e 11. A execução do teste permite verificar quais combinações de potência e velocidade são capazes de realizar o corte completo do material, auxiliando na identificação dos parâmetros de operação mais eficientes para a máquina.
 
-## Metodologia
+## Arquivos disponíveis
 
-O arquivo de teste utiliza diferentes combinações de parâmetros:
+- **[`teste.wcvr`](https://github.com/labmaker-jatai/diagnosticoalinhamentolaser/blob/main/teste.wcvr)** – Arquivo compatível com o software AutoLaser, utilizado no controle das máquinas de corte a laser Delta CNC.
+- **[`teste.dxf`](https://github.com/labmaker-jatai/diagnosticoalinhamentolaser/blob/main/teste.dxf)** – Arquivo vetorial em formato DXF, que pode ser utilizado em máquinas de corte a laser compatíveis com esse formato e que utilizem outros softwares de controle.
 
-- **Intensidade de corte:** de 55% a 100%;
-- **Velocidade de corte:** de 2 a 11;
-- **Total:** 100 combinações diferentes de intensidade e velocidade.
+## Como utilizar
 
-Ao executar o teste, a máquina realiza cortes correspondentes a cada configuração. Após a execução, é possível analisar os resultados e identificar **quais combinações de intensidade e velocidade são mais adequadas para realizar o corte**.
+1. Abra o arquivo correspondente ao software controlador da máquina.
+2. Prepare o material que será utilizado no teste, garantindo que esteja adequadamente posicionado na área de corte.
+3. Execute o teste e observe os resultados de cada combinação de intensidade e velocidade.
+4. Identifique quais configurações produziram cortes completos e quais não foram suficientes para atravessar o material.
 
-Esse procedimento pode auxiliar na identificação de problemas de alinhamento, regulagem ou desempenho do sistema de corte a laser.
+## Resultados esperados
 
-## Arquivo de teste
+Ao final do procedimento, será possível identificar as combinações de intensidade e velocidade que permitem realizar cortes completos no material testado. Esses resultados servem como referência para a configuração dos parâmetros de corte da máquina.
 
-O arquivo [`teste.wcvr`](https://github.com/labmaker-jatai/diagnosticoalinhamentolaser/blob/main/teste.wcvr) contém o desenho e as configurações utilizadas no teste e é compatível com o software **AutoLaser**.
-
-## Resultado esperado
-
-Ao final do procedimento, é possível determinar a faixa de configurações em que a **Delta CNC** apresenta capacidade de realizar cortes, fornecendo uma referência para a regulagem da máquina e para a escolha dos parâmetros de corte.
+**Observação:** os resultados podem variar conforme o material, sua espessura, o estado de conservação e o alinhamento óptico da máquina. Este teste avalia principalmente a capacidade de corte para diferentes parâmetros de operação, não substituindo procedimentos específicos de verificação do alinhamento óptico do laser.
